@@ -1,10 +1,12 @@
 class Automovil():
     largoChasis = 250
-    ruedas      = 4
+    __ruedas    = 4       # variable privada no accesible desde fuera
     estado      = False
 
     def arrancarMotor(self):
-        pass
+        self.estado = True
 
 bwm = Automovil()
+print(bwm.largoChasis, bwm.ruedas, bwm.estado)
+bwm.arrancarMotor()
 print(bwm.largoChasis, bwm.ruedas, bwm.estado)
