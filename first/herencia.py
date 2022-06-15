@@ -1,5 +1,6 @@
 class Woman():
-    pass
+    def iiswoman(self):
+        print('i am woman')
 
 class Person:
     i_have_father = True
@@ -21,4 +22,5 @@ class Student(Person, Woman): # que constuctor estara heredando ?¿ se da precer
 tania = Student('tania', 22)
 tania.say()
 tania.mobing()
+tania.iiswoman()
 print(tania.i_have_father)
