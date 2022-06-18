@@ -1,27 +1,9 @@
-import webbrowser
-import os
-  
-f = open('GFG.html', 'w')
-html_template = """
-<html>
-<head>
-<script>
-     let urlPath = 'kasparov.as'
-     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
-     alert('click')
-</script>
-</head>
-<body>
-<p>Geeks For Geeks</p>
-  
-</body>
-</html>
-"""
+import plotly.express as px
+fig = px.bar(x=["a", "b", "c"], y=[1, 3, 2])
+fig.write_html('first_figure.html', auto_open=True)
 
-f.write(html_template)
-  
-f.close()
-  
-# 1st method how to open html files in chrome using
-filename = 'file:///'+os.getcwd()+'/' + 'GFG.html'
-webbrowser.open_new_tab(filename)
+
+# como crear un .exe
+# pip intall pyinstaller
+# pyinstaller --windowed index.py
+# pyinstaller --windowed --onefile index.py
