@@ -1,7 +1,7 @@
 http://suzdalenko.pythonanywhere.com/ -> admin: alexei.saron@gmail.com
 
+https://youtu.be/A91vnHaH7DE?list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB
 
-https://youtu.be/ELkaEpN29PU
-
-
-https://youtu.be/V87m9SltcI8?list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS
+django-admin startproject Projecto1
+python manage.py migrate
+python manage.py runserver
