@@ -32,7 +32,7 @@ ROOT_URLCONF = 'Projecto1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/__ANDROID_WORK_SUZDALENKO_ALEXEI/python/Projecto1/Projecto1/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

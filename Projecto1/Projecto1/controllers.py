@@ -2,6 +2,9 @@ from pipes import Template
 from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
+from django.template import loader
+from django.shortcuts import render
+
 
 def start_page(request):    # primera vista
     doc_externo = open('C:/__ANDROID_WORK_SUZDALENKO_ALEXEI/python/Projecto1/Projecto1/templates/start.html')
@@ -12,14 +15,10 @@ def start_page(request):    # primera vista
     
     return HttpResponse(documento)
 
+# http://127.0.0.1:8000/fecha/
 def dame_fecha(request):    
-    doc_externo = open('C:/__ANDROID_WORK_SUZDALENKO_ALEXEI/python/Projecto1/Projecto1/templates/fecha.html')
-    plt = Template(doc_externo.read())
-    doc_externo.close()
-
-    name = 'alexei'; email = 'saron.alexei';
-    ctx = Context({'name' : name, 'email' : email})
-    documento = plt.render(ctx)
+    doc_externo = loader.get_template('fecha.html')
+    documento = doc_externo.render({'name': 'alexei', 'email': 'saron.alexei@gmail.com'})
     return HttpResponse(documento)    
 
 def calcAge(request, id):
@@ -29,3 +28,6 @@ def calcAge(request, id):
 def two(request, x, y):
     return HttpResponse(' x = ' + str(x) + ' y = ' + str(y)) 
 
+def super_contr(request):
+    data = {'name': 'methodo', 'email': 'avanzado'}
+    return render(request, 'fecha.html', data)
