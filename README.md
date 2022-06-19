@@ -1,6 +1,5 @@
 http://suzdalenko.pythonanywhere.com/ -> admin: alexei.saron@gmail.com
 
-https://youtu.be/XoYKA1KQpYc?list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB
 
 # install and create app
 django-admin startproject Projecto1
@@ -12,5 +11,5 @@ python manage.py runserver
 
 
 
-https://youtu.be/9GoZ-EO1hvQ
+# run server independient
 python -m http.server 5050
