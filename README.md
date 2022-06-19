@@ -6,3 +6,8 @@ django-admin startproject Projecto1
 python manage.py migrate
 C:\__ANDROID_WORK_SUZDALENKO_ALEXEI\python\Projecto1> python manage.py runserver
 python manage.py runserver
+
+
+
+https://youtu.be/9GoZ-EO1hvQ
+python -m http.server 5050

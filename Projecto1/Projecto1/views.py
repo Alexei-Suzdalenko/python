@@ -9,11 +9,18 @@ def start_page(request):    # primera vista
     doc_externo.close()
     ctx = Context()
     documento = plt.render(ctx)
+    
     return HttpResponse(documento)
 
-def dame_fecha(request):    # primera vista
-    fecha = datetime.datetime.now()
-    return HttpResponse('fecha ' + str(fecha))    
+def dame_fecha(request):    
+    doc_externo = open('C:/__ANDROID_WORK_SUZDALENKO_ALEXEI/python/Projecto1/Projecto1/templates/fecha.html')
+    plt = Template(doc_externo.read())
+    doc_externo.close()
+
+    name = 'alexei'; email = 'saron.alexei';
+    ctx = Context({'name' : name, 'email' : email})
+    documento = plt.render(ctx)
+    return HttpResponse(documento)    
 
 def calcAge(request, id):
     more = '<a href="http://127.0.0.1:8000/start/">index page</a><br>'
