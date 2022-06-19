@@ -10,6 +10,12 @@ python manage.py runserver
 
 
 
-
 # run server independient
 python -m http.server 5050
+
+
+
+
+# create new project tiendaOnline
+1. django-admin startproject tiendaOnline            // creamos nuevo proyecto
+2. python manage.py startapp gestionPedidos          // creacion de una aplicacion
