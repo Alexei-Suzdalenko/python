@@ -21,3 +21,15 @@ python -m http.server 5050
 4. python manage.py makemigrations                   // creacion de base datos y migracion modelos   
 5. python manage.py sqlmigrate gestionPedidos 0001   // creacion de sql codigo 
 6. python manage.py migrate                          // por fin creamos tablas
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'xamp_base',
+        'USER'    : 'root',                    
+        'PASSWORD': '',             
+        'HOST'    : 'localhost',               
+        'PORT'    : '3306',
+    }
+}
