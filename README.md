@@ -22,6 +22,7 @@ python -m http.server 5050
 5. python manage.py sqlmigrate gestionPedidos 0001   // creacion de sql codigo 
 6. python manage.py migrate                          // por fin creamos tablas
 
+-- 7. python manage.py createsuperuser               // alexei, svoboda
 
 DATABASES = {
     'default': {
